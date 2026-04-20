@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.poke86.game.data.repository.GameRepositoryImplTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-04-16T23:02:06" hostname="GIGA_POKE86" time="0.004">
+  <properties/>
+  <testcase name="solo games exist" classname="com.poke86.game.data.repository.GameRepositoryImplTest" time="0.0"/>
+  <testcase name="getCategories returns exactly 5 categories" classname="com.poke86.game.data.repository.GameRepositoryImplTest" time="0.001"/>
+  <testcase name="first category id is all" classname="com.poke86.game.data.repository.GameRepositoryImplTest" time="0.0"/>
+  <testcase name="all games have at least one tag" classname="com.poke86.game.data.repository.GameRepositoryImplTest" time="0.001"/>
+  <testcase name="all games have non-empty route" classname="com.poke86.game.data.repository.GameRepositoryImplTest" time="0.0"/>
+  <testcase name="all games have at least one category" classname="com.poke86.game.data.repository.GameRepositoryImplTest" time="0.0"/>
+  <testcase name="getGames returns exactly 8 games" classname="com.poke86.game.data.repository.GameRepositoryImplTest" time="0.001"/>
+  <testcase name="party games exist" classname="com.poke86.game.data.repository.GameRepositoryImplTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

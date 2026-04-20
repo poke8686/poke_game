@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.poke86.game.app-mergeReleaseResources-54:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\poke8\\.gradle\\caches\\transforms-4\\3a99db8fc25c30c4178b298a65b5e10d\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

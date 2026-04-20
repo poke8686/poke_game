@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"adb -s emulator-5554 install -r app/build/outputs/apk/debug/app-debug.apk 2>&1\",\"description\":\"Install on emulator\"}",
+  "error": "Exit code 1\nadb.exe: device 'emulator-5554' not found",
+  "timestamp": "2026-04-19T22:57:51.605Z",
+  "retry_count": 1
+}

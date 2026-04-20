@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string back
+string coming_soon
+string game_balance_desc
+string game_balance_name
+string game_chosung_desc
+string game_chosung_name
+string game_colortest_desc
+string game_colortest_name
+string game_memory_desc
+string game_memory_name
+string game_nunchigame_desc
+string game_nunchigame_name
+string game_reaction_desc
+string game_reaction_name
+string game_spy_desc
+string game_spy_name
+string game_wordchain_desc
+string game_wordchain_name
+string home_title
+style Theme.GameVault

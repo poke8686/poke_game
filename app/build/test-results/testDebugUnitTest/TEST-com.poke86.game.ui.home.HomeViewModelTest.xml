@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.poke86.game.ui.home.HomeViewModelTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-04-16T23:02:05" hostname="GIGA_POKE86" time="0.25">
+  <properties/>
+  <testcase name="initial selectedCategory is all" classname="com.poke86.game.ui.home.HomeViewModelTest" time="0.195"/>
+  <testcase name="selecting solo filters to solo games only" classname="com.poke86.game.ui.home.HomeViewModelTest" time="0.034"/>
+  <testcase name="filteredGames shows all 8 games when category is all" classname="com.poke86.game.ui.home.HomeViewModelTest" time="0.005"/>
+  <testcase name="categories returns 5 items" classname="com.poke86.game.ui.home.HomeViewModelTest" time="0.004"/>
+  <testcase name="selecting party filters to party games only" classname="com.poke86.game.ui.home.HomeViewModelTest" time="0.006"/>
+  <testcase name="switching back to all shows all games" classname="com.poke86.game.ui.home.HomeViewModelTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

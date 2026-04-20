@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GameVault</string>
+
+    <!-- 홈 화면 -->
+    <string name="home_title">게임 모음</string>
+
+    <!-- 게임 이름 / 설명 -->
+    <string name="game_nunchigame_name">눈치 게임</string>
+    <string name="game_nunchigame_desc">번호 겹치면 탈락!</string>
+    <string name="game_reaction_name">반응속도 대결</string>
+    <string name="game_reaction_desc">화면 변화에 가장 빨리 반응하라</string>
+    <string name="game_balance_name">밸런스 게임</string>
+    <string name="game_balance_desc">양자택일, 다수결로 승부</string>
+    <string name="game_wordchain_name">끝말잇기</string>
+    <string name="game_wordchain_desc">타이머 안에 단어를 이어라</string>
+    <string name="game_memory_name">숫자 기억</string>
+    <string name="game_memory_desc">단기 기억력을 테스트하라</string>
+    <string name="game_colortest_name">색깔 맞추기</string>
+    <string name="game_colortest_desc">글자 색깔과 의미, 무엇을 따를까?</string>
+    <string name="game_spy_name">스파이 게임</string>
+    <string name="game_spy_desc">우리 중 스파이를 찾아라</string>
+    <string name="game_chosung_name">초성 퀴즈</string>
+    <string name="game_chosung_desc">초성만 보고 단어를 맞혀라</string>
+
+    <!-- 공통 -->
+    <string name="back">뒤로</string>
+    <string name="coming_soon">준비 중입니다</string>
+</resources>
