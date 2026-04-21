@@ -57,5 +57,6 @@ data class TDCharacterSave(
     val level: Int = 1,
     val star: Int = 1,
     val evolutionGrade: String = "F",
+    val baseAtkMult: Float = 1.0f,
     val totalInvested: Int = 0,
 )

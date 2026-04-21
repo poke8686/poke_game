@@ -112,6 +112,14 @@ data class Category(
 
 ---
 
+## 주요 업데이트 내역 (2026-04-21)
+
+- **타워 디펜스 시각 효과**: 캐릭터 등급(F~S+)별 바닥 장판(Grade Plate) 및 화려한 애니메이션 추가
+- **앱 아이콘 리뉴얼**: 4분할 컬러 그리드와 중앙 컨트롤러 디자인의 'GameVault' 전용 아이콘 적용
+- **빌드 환경 최적화**: `gradle.properties`에 JDK 경로 명시하여 빌드 호환성 해결
+
+---
+
 ## 작업 규칙
 
 - 각 게임은 독립적인 파일/패키지로 분리 (추후 추가가 쉽도록)
@@ -120,6 +128,7 @@ data class Category(
 - 한국어 string resource 사용 (`res/values/strings.xml`)
 - 빌드 에러 없이 실행 가능한 상태로 마무리
 - 신규 게임 추가 시: `domain/model` 데이터 추가 → `GameRepositoryImpl` 등록 → `ui/games/<id>/` 화면 작성 → Navigation 라우트 연결
+- **빌드 주의사항**: JDK 버전 호환성을 위해 `gradle.properties`의 `org.gradle.java.home` 설정을 확인한다.
 
 ---
 

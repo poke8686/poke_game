@@ -418,6 +418,13 @@ error: [Hilt] Cannot process an @HiltAndroidApp application
 ./gradlew build    # 재빌드
 ```
 
+**Java 버전 호환성 문제 (Gradle Java version incompatibility):**
+빌드 시 Java 버전 관련 에러가 발생하면 `gradle.properties` 파일에 Android Studio 번들 JDK 경로를 명시하여 해결할 수 있습니다.
+
+```properties
+org.gradle.java.home=C:\\Program Files\\Android\\Android Studio\\jbr
+```
+
 캐시 문제라면 `~/.gradle/caches` 폴더 삭제 후 재시도.
 
 ---

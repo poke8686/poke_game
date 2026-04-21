@@ -4,7 +4,64 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    
+    <!-- Quadrant 1: Defense (Red) -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M24,24 h30 v30 h-30 Z" />
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M54,26 L74,66 H34 Z" />
+        android:pathData="M39,32 L45,46 H33 Z" /> <!-- Small Shield/Sword placeholder -->
+
+    <!-- Quadrant 2: Puzzle (Blue) -->
+    <path
+        android:fillColor="#1E88E5"
+        android:pathData="M54,24 h30 v30 h-30 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M64,34 h10 v10 h-10 Z" /> <!-- Small Cube placeholder -->
+
+    <!-- Quadrant 3: Luck/Dice (Amber) -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M24,54 h30 v30 h-30 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,64 q3,0 3,3 q0,3 -3,3 q-3,0 -3,-3 q0,-3 3,-3" /> <!-- Die dot -->
+
+    <!-- Quadrant 4: Reaction (Green) -->
+    <path
+        android:fillColor="#43A047"
+        android:pathData="M54,54 h30 v30 h-30 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M69,59 l5,15 l-10,-5 l10,-5 Z" /> <!-- Small Lightning/Star -->
+
+    <!-- Central Controller Icon -->
+    <!-- Controller Body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,48 h28 q12,0 12,12 v4 q0,8 -8,8 h-36 q-8,0 -8,-8 v-4 q0,-12 12,-12 Z" />
+    <!-- Controller Handles -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,60 q-2,16 6,16 h6 q6,0 6,-6 v-10 Z M68,60 q2,16 -6,16 h-6 q-6,0 -6,-6 v-10 Z" />
+    
+    <!-- Controller Buttons (Details) -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M36,54 h4 v4 h-4 Z M36,58 h4 v4 h-4 Z" /> <!-- D-pad simple -->
+    <path
+        android:fillColor="#D81B60"
+        android:pathData="M68,56 q1.5,0 1.5,1.5 q0,1.5 -1.5,1.5 q-1.5,0 -1.5,-1.5 q0,-1.5 1.5,-1.5 Z" /> <!-- Red Button -->
+    <path
+        android:fillColor="#039BE5"
+        android:pathData="M62,56 q1.5,0 1.5,1.5 q0,1.5 -1.5,1.5 q-1.5,0 -1.5,-1.5 q0,-1.5 1.5,-1.5 Z" /> <!-- Blue Button -->
+
+    <!-- Vault Frame/Border -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M24,24 h60 v60 h-60 Z" />
+
 </vector>
