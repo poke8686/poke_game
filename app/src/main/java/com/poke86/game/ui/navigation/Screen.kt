@@ -14,4 +14,12 @@ sealed class Screen(val route: String) {
     object Chosung : Screen(Routes.CHOSUNG)
     object Defense : Screen(Routes.DEFENSE)
     object TowerDefense : Screen(Routes.TOWER_DEFENSE)
+    object OneToFifty : Screen(Routes.ONE_TO_FIFTY)
+    object FingerRoulette : Screen(Routes.FINGER_ROULETTE)
+    object BombPass : Screen(Routes.BOMB_PASS)
+    object MoleWhack : Screen(Routes.MOLE_WHACK)
+    object SpotDiff : Screen(Routes.SPOT_DIFF)
+    object Nightfall : Screen(Routes.NIGHTFALL)
+    object ChatList : Screen(Routes.CHAT_LIST)
+    object ChatRoom : Screen(Routes.CHAT_ROOM)
 }

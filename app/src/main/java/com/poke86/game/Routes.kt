@@ -13,4 +13,12 @@ object Routes {
     const val CHOSUNG = "game/chosung"
     const val DEFENSE = "game/defense"
     const val TOWER_DEFENSE = "game/towerdefense"
+    const val ONE_TO_FIFTY = "game/one_to_fifty"
+    const val FINGER_ROULETTE = "game/finger_roulette"
+    const val BOMB_PASS = "game/bomb_pass"
+    const val MOLE_WHACK = "game/mole_whack"
+    const val SPOT_DIFF = "game/spot_diff"
+    const val NIGHTFALL = "game/nightfall"
+    const val CHAT_LIST = "chat/list"
+    const val CHAT_ROOM = "chat/room/{roomId}/{roomName}"
 }

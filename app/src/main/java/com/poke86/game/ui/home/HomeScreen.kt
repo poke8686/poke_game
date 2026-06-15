@@ -9,6 +9,7 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -44,7 +45,8 @@ fun HomeScreen(
         filteredGames = filteredGames,
         selectedCategory = selectedCategory,
         onCategorySelected = viewModel::onCategorySelected,
-        onGameClick = { navController.navigate(it.route) }
+        onGameClick = { navController.navigate(it.route) },
+        onChatClick = { navController.navigate(com.poke86.game.Routes.CHAT_LIST) }
     )
 }
 
@@ -55,11 +57,17 @@ private fun HomeContent(
     filteredGames: List<Game>,
     selectedCategory: String,
     onCategorySelected: (String) -> Unit,
-    onGameClick: (Game) -> Unit
+    onGameClick: (Game) -> Unit,
+    onChatClick: () -> Unit
 ) {
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text(stringResource(R.string.home_title)) })
+            TopAppBar(
+                title = { Text(stringResource(R.string.home_title)) },
+                actions = {
+                    IconButton(onClick = onChatClick) { Text("💬") }
+                }
+            )
         }
     ) { innerPadding ->
         Column(
@@ -107,7 +115,8 @@ private fun HomeContentPreview() {
             ),
             selectedCategory = "all",
             onCategorySelected = {},
-            onGameClick = {}
+            onGameClick = {},
+            onChatClick = {}
         )
     }
 }

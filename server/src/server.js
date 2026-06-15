@@ -1,6 +1,8 @@
 const { createServer } = require('http');
 const { WebSocketServer } = require('ws');
 const { handleNunchi } = require('./games/nunchi');
+const { handleChat } = require('./games/chat');
+const { handleHttp: handleSpotDiff } = require('./games/spotdiff');
 const logger = require('./shared/logger');
 
 const PORT = process.env.PORT || 3000;
@@ -11,7 +13,7 @@ const httpServer = createServer((req, res) => {
 
   if (url === '/' || url === '/health') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    return res.end(JSON.stringify({ status: 'ok', games: ['nunchi'] }));
+    return res.end(JSON.stringify({ status: 'ok', games: ['nunchi', 'chat', 'spotdiff'] }));
   }
 
   const gameHealth = url.match(/^\/(\w+)\/health$/);
@@ -19,6 +21,8 @@ const httpServer = createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     return res.end(JSON.stringify({ status: 'ok', game: gameHealth[1] }));
   }
+
+  if (handleSpotDiff(req, res)) return;
 
   res.writeHead(404);
   res.end('Not Found');
@@ -29,6 +33,7 @@ const wss = new WebSocketServer({ server: httpServer });
 
 const GAME_HANDLERS = {
   nunchi: handleNunchi,
+  chat: handleChat,
 };
 
 wss.on('connection', (ws, req) => {

@@ -1,0 +1,15 @@
+id,nameKey,kind,emoji,color,level,cost,atk,atkSpeed,range,projectile,aoe,pierce,slow,troopCount,troopHp,troopAtk,troopRange,income,hp
+1101,bld_archer,Tower,🏹,#26A69A,1,55,14,1.2,3.0,Straight,0,0,0,0,0,0,0,0,0
+1101,bld_archer,Tower,🏹,#26A69A,2,60,18,1.3,3.2,Straight,0,0,0,0,0,0,0,0,0
+1101,bld_archer,Tower,🏹,#26A69A,3,90,24,1.4,3.4,Straight,0,0,0,0,0,0,0,0,0
+1102,bld_bombard,Tower,💣,#EF6C00,1,75,30,0.5,2.6,Arc,1.2,0,0,0,0,0,0,0,0
+1102,bld_bombard,Tower,💣,#EF6C00,2,80,40,0.55,2.7,Arc,1.3,0,0,0,0,0,0,0,0
+1102,bld_bombard,Tower,💣,#EF6C00,3,120,54,0.6,2.8,Arc,1.5,0,0,0,0,0,0,0,0
+1103,bld_frost,Tower,❄️,#4FC3F7,1,70,8,1.0,2.8,Straight,0,0,0.4,0,0,0,0,0,0
+1103,bld_frost,Tower,❄️,#4FC3F7,2,75,10,1.05,2.9,Straight,0,0,0.45,0,0,0,0,0,0
+1104,bld_arcane,Tower,🔮,#7E57C2,1,85,18,0.9,2.9,Homing,0,3,0,0,0,0,0,0,0
+1104,bld_arcane,Tower,🔮,#7E57C2,2,95,24,0.95,3.0,Homing,0,4,0,0,0,0,0,0,0
+1201,bld_barracks,Barracks,⚔️,#C62828,1,75,0,0,0,Straight,0,0,0,3,60,8,0.5,0,0
+1201,bld_barracks,Barracks,⚔️,#C62828,2,80,0,0,0,Straight,0,0,0,3,80,11,0.5,0,0
+1301,bld_farm,Income,🌾,#9CCC65,1,45,0,0,0,Straight,0,0,0,0,0,0,0,25,0
+1301,bld_farm,Income,🌾,#9CCC65,2,50,0,0,0,Straight,0,0,0,0,0,0,0,40,0

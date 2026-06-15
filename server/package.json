@@ -5,10 +5,14 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node --watch src/server.js"
+    "dev": "node --watch src/server.js",
+    "generate:spotdiff": "node scripts/generate-spotdiff-stages.js"
   },
   "dependencies": {
     "uuid": "^9.0.1",
     "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
   }
 }

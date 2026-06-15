@@ -23,6 +23,13 @@
     <string name="game_chosung_name">초성 퀴즈</string>
     <string name="game_chosung_desc">초성만 보고 단어를 맞혀라</string>
 
+    <string name="game_one_to_fifty_name">1 to 50</string>
+    <string name="game_one_to_fifty_desc">1부터 50까지 누가 더 빨리 누를까?</string>
+    <string name="game_finger_roulette_name">손가락 룰렛</string>
+    <string name="game_finger_roulette_desc">누가 걸릴까? 운명의 손가락 하나!</string>
+    <string name="game_bomb_pass_name">시한폭탄</string>
+    <string name="game_bomb_pass_desc">폭탄이 터지기 전에 단어를 말하고 넘겨라!</string>
+
     <!-- 공통 -->
     <string name="back">뒤로</string>
     <string name="coming_soon">준비 중입니다</string>

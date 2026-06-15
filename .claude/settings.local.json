@@ -65,7 +65,9 @@
       "Bash(adb -s R3CT30Z61TA install -r d:/app/android_app/game/app/build/outputs/apk/debug/app-debug.apk)",
       "Read(//c/Users/poke8/.gradle/jdks//**)",
       "Bash(JAVA_HOME=\"/c/Program Files/Android/Android Studio/jbr\" ./gradlew :app:assembleDebug)",
-      "Bash(JAVA_HOME=\"/c/Program Files/Android/Android Studio/jbr\" ./gradlew :app:installDebug)"
+      "Bash(JAVA_HOME=\"/c/Program Files/Android/Android Studio/jbr\" ./gradlew :app:installDebug)",
+      "WebFetch(domain:docs.korge.org)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ],
     "additionalDirectories": [
       "C:\\Users\\poke8\\.android\\avd\\Medium_Phone_2.avd\\hardware-qemu.ini.lock",

@@ -1,0 +1,9 @@
+id,nameKey,archetype,emoji,color,hp,atk,atkSpeed,moveSpeed,range,gold,targeting,flyer,ignoresWalls
+2001,enemy_grunt,Melee,🟢,#5BBF5B,80,8,1.0,2.2,0.5,6,Castle,0,0
+2002,enemy_slinger,Ranged,🟡,#C9C25B,55,10,0.8,2.0,3.0,8,Castle,0,0
+2003,enemy_bat,Flyer,🦇,#7E57C2,35,6,1.0,3.4,0.5,5,Castle,1,1
+2004,enemy_brute,Tank,🟩,#2E7D32,320,18,0.6,1.4,0.6,14,Castle,0,0
+2005,enemy_wraith,Slayer,👻,#B0BEC5,90,22,0.8,2.4,0.5,12,Castle,0,0
+2006,enemy_sapper,Sapper,💥,#E65100,70,40,0.5,2.0,0.6,9,Building,0,1
+2007,enemy_harpy,Flyer,🟪,#AB47BC,60,9,0.9,3.0,2.6,9,Castle,1,1
+2901,boss_warlord,Boss,👹,#C62828,2600,30,0.7,1.2,0.7,120,Castle,0,0

@@ -112,11 +112,25 @@ data class Category(
 
 ---
 
-## 주요 업데이트 내역 (2026-04-21)
+## 주요 업데이트 내역 (2026-06-05)
 
-- **타워 디펜스 시각 효과**: 캐릭터 등급(F~S+)별 바닥 장판(Grade Plate) 및 화려한 애니메이션 추가
-- **앱 아이콘 리뉴얼**: 4분할 컬러 그리드와 중앙 컨트롤러 디자인의 'GameVault' 전용 아이콘 적용
-- **빌드 환경 최적화**: `gradle.properties`에 JDK 경로 명시하여 빌드 호환성 해결
+- **신규 게임 「왕국 국경 디펜스」(nightfall)**: Thronefall/Nightfall 스타일의 탑다운 거점 디펜스.
+  낮(건설/업그레이드) → 밤(웨이브 방어) → 아침(수확) 루프. 중앙 성 + 성벽/성문/방벽,
+  노드 기반 건물(화살탑/막사/집), 막사 병사 자동전투, 티어 업그레이드(Lv1~8),
+  성 레벨업, 바이옴(초원→설원→용암), 다방향 성문, 5웨이브마다 보스, 파티클 VFX, 저장/복원.
+- **Korge 게임엔진 도입**: 대규모 유닛/파티클을 위해 `nightfall` 게임만 Korge 6.0.0 사용.
+- (이전) 타워 디펜스 등급판/성장, 앱 아이콘, JDK 경로 설정.
+
+### Nightfall (Korge) 기술 메모
+
+- **엔진**: Korge `com.soywiz.korge:korge:6.0.0` — **라이브러리로만** 추가(Korge Gradle 플러그인 미적용, Kotlin 플러그인 충돌 방지).
+- **호환성**: Korge 6.0.0이 Kotlin 2.0.20로 빌드됨 → 프로젝트 **Kotlin 2.0.0→2.0.20, KSP→2.0.20-1.0.25, JVM target 17→21** 상향(JBR 21).
+- **임베드**: `ui/games/nightfall/NightfallScreen.kt` 가 Compose `AndroidView` 로 `KorgeAndroidView` 를 감싸고 `loadModule(NightfallKorge.config())` 호출. `onRelease`에서 `unloadModule`.
+- **엔진 코드**: `game/nightfall/` (순수 Kotlin, Compose/Hilt 비의존). 게임 로직은 `NightfallWorld.kt`.
+- **폰트**: 한글은 Korge 기본 폰트(ASCII 전용)로 안 나옴 → `assets/fonts/NanumGothicBold.ttf`(OFL, TrueType) 번들 후 `resourcesVfs[...].readTtfFont()` 로 로드.
+- **저장**: `NightfallSave`(KorgeKt) 브리지에 `NightfallScreen`이 SharedPreferences 람다 주입 → `NightfallWorld`가 직렬화 문자열 저장/복원.
+- **벤치마크 원작**은 Unity(IL2CPP) 게임 — 코드/에셋 이식 불가(저작권), 디자인/구조만 오리지널로 재현.
+- **남은 폴리시**: 효과음(AudioTrack) 미구현, 추가 적/유닛 종류, 밸런스 튜닝.
 
 ---
 

@@ -466,8 +466,10 @@ class TowerDefenseViewModel @Inject constructor(
     fun summonCharacter() {
         val st = _state.value
         val cell = st.selectedCell ?: return
+        val (col, row) = cell
+        if (col !in 0 until GRID_COLS || row !in 0 until GRID_ROWS) return
         if (PATH_CELLS.contains(cell)) return
-        if (st.characters.any { it.col == cell.first && it.row == cell.second }) return
+        if (st.characters.any { it.col == col && it.row == row }) return
         val cost = buyGold(st.characters.size)
         if (st.gold < cost) return
         
@@ -482,7 +484,7 @@ class TowerDefenseViewModel @Inject constructor(
                 gold = it.gold - cost,
                 characters = it.characters + TDCharacter(
                     id = nextId++, type = randomType,
-                    col = cell.first, row = cell.second, totalInvested = cost
+                    col = col, row = row, totalInvested = cost
                 ),
                 selectedCell = cell
             )
@@ -620,6 +622,7 @@ class TowerDefenseViewModel @Inject constructor(
     }
 
     fun moveCharacter(fromCol: Int, fromRow: Int, toCol: Int, toRow: Int) {
+        if (toCol !in 0 until GRID_COLS || toRow !in 0 until GRID_ROWS) return
         if (PATH_CELLS.contains(toCol to toRow)) return
         val st = _state.value
         val char = st.characters.find { it.col == fromCol && it.row == fromRow } ?: return
