@@ -3,6 +3,7 @@ const { WebSocketServer } = require('ws');
 const { handleNunchi } = require('./games/nunchi');
 const { handleChat } = require('./games/chat');
 const { handleHttp: handleSpotDiff } = require('./games/spotdiff');
+const { handleHttp: handleTD } = require('./games/td');
 const logger = require('./shared/logger');
 
 const PORT = process.env.PORT || 3000;
@@ -23,6 +24,7 @@ const httpServer = createServer((req, res) => {
   }
 
   if (handleSpotDiff(req, res)) return;
+  if (handleTD(req, res)) return;
 
   res.writeHead(404);
   res.end('Not Found');

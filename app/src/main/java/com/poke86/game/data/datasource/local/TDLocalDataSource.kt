@@ -35,6 +35,7 @@ class TDLocalDataSource @Inject constructor(
         val RESOURCES  = stringPreferencesKey("td_resources")
         val CHARACTERS = stringPreferencesKey("td_characters")
         val SAVED_AT   = stringPreferencesKey("td_saved_at")
+        val USER_ID    = stringPreferencesKey("td_user_id")
     }
 
     fun observe(): Flow<TDSaveData> = context.tdDataStore.data.map { it.toSaveData() }
@@ -69,6 +70,13 @@ class TDLocalDataSource @Inject constructor(
             prefs[Keys.CHARACTERS] = json.encodeToString(ListSerializer(TDCharacterSave.serializer()), characters)
             prefs[Keys.SAVED_AT]   = System.currentTimeMillis().toString()
         }
+    }
+
+    suspend fun getUserId(): String? =
+        context.tdDataStore.data.first()[Keys.USER_ID]
+
+    suspend fun saveUserId(userId: String) {
+        context.tdDataStore.edit { it[Keys.USER_ID] = userId }
     }
 
     // ─── Preferences → TDSaveData ─────────────────────────────────────────────
